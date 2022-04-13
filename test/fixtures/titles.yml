@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title_number: MyString
+  value: 9.99
+  due_date: 2022-04-09
+  cpnj_assignor: MyString
+  cnpj_drawee: MyString
+
+two:
+  title_number: MyString
+  value: 9.99
+  due_date: 2022-04-09
+  cpnj_assignor: MyString
+  cnpj_drawee: MyString

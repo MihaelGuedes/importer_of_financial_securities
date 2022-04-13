@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  assignors_protests[]: MyText
+  drawees_protests[]: MyText
+  status: MyString
+
+two:
+  assignors_protests[]: MyText
+  drawees_protests[]: MyText
+  status: MyString

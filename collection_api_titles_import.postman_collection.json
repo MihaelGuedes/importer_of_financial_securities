@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "fb491937-a7dc-47bc-b45c-5ec1c80f1c80",
+		"name": "collection_api_titles_import",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "TITLES IMPORT",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"title_number\": \"300012\",\n        \"value\": 1000.0,\n        \"due_date\": \"2022-05-05\",\n        \"cnpj_assignor\": \"31.201.274/0001-72\",\n        \"cnpj_drawee\": \"27.865.863/0001-00\"\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/titles/import",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"titles",
+						"import"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TITLES",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/titles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"titles"
+					],
+					"query": [
+						{
+							"key": "cnpj_assignor",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "cnpj_drawee",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "initial_date_range",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "final_date_range",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "have_criticism",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "title_number",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
