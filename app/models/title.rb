@@ -13,7 +13,7 @@ class Title < ApplicationRecord
   validates :cnpj_assignor, format: { with: /\A\d{2}\.\d{3}.\d{3}\/\d{4}-\d{2}\Z/, message: 'incorrect formatting, try: 00.000.000/0000-00' }
   validates :cnpj_drawee, format: { with: /\A\d{2}\.\d{3}.\d{3}\/\d{4}-\d{2}\Z/, message: 'incorrect formatting, try: 00.000.000/0000-00' }
   
-  after_save :external_validations_async
+  after_commit :external_validations_async
 
   def validate_date_greater_than_today
     if due_date.present? && due_date.to_date <= Date.today
