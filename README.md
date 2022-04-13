@@ -1,4 +1,3 @@
-* ...
 <h1 align="center">
   Importer of Financial Securities - API Rest
 </h1>
@@ -17,6 +16,7 @@
 ## 💼 About the project
 
 <p>
+
   To understand the API, access the [DOCUMENTATION.](https://spice-spandex-6d5.notion.site/Documenta-o-API-de-Registros-de-T-tulos-Financeiros-ad522c9be20842519fdc19a714a8c28b)
 </p>
 
@@ -66,6 +66,8 @@ You can follow this tutorials for installing Docker and Docker Compose:
 - [Install Docker - Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
 - [Install Docker Compose - Ubuntu](https://docs.docker.com/compose/install/)
 
+----------------------------------------------------------------------------------
+
 **Clone the project and access the folder**
 
 ```bash
@@ -83,11 +85,12 @@ docker-compose exec app bundle exec rake db:setup db:migrate
 ```
 
 
-**To check the tests run**
+**To check the tests, run**
 ```bash
 docker-compose exec app rspec
 ```
 
+----------------------------------------------------------------------------------
 ### Testing the API with Postman
 
 **1. Open your posman, and import the file "collection_api_titles_import.postman_collection.json" at the root of this project.**
